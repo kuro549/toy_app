@@ -10,7 +10,10 @@
   <%= @user.email %>
 </p>
 
+<p>
+  最初の投稿：
 <%= @user.microposts.first.content %>
+</p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
